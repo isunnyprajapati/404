@@ -32,10 +32,12 @@
 
 .title
 {
+    color: #38220f;
     display: flex;
     justify-content: start;
     align-items: center;
     font-size: 1.8rem;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .nav-btns 
@@ -51,7 +53,7 @@
     display: flex;
     justify-content: end;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
 }
 
 .search-bar form
@@ -66,45 +68,56 @@
     height: 25px;
     width: 25px;
     color: #38220f;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+    transition: transform 0.3s ease;
 }
 #search-icon:hover
 {
     cursor: pointer;
+    transform: scale(1.05);
 }
 
 .search-box
 {
     display: none;
-    width: 200px;
+    width: 0px;
     height: 30px;
     font-size: 1.2rem;
     border: none;
     border-bottom: 2px solid #38220f;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
     outline: none;
     background: none;
     color: #38220f;
+
+    opacity: 0;
+    transition: width 1s linear, opacity 1s linear;
 }
 .search-box::placeholder
 {
     color: #38220f;
 }
-
-img 
+.search-box.appear
 {
-    height: 47px;
-    border-radius: 50%;
-    margin-left: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    width: 200px;
+    opacity: 1;
+}
+
+#login 
+{
+    color: #38220f;
+    height: 30px;
+    width: 30px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+    transition: transform 0.3s ease;
 }
 
 
-img:hover 
+#login:hover 
 {
-    background-color: #38220f;
-    transform: scale(1.05);
-    opacity: 1.3;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     cursor: pointer;
+    transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
 }
 
 .nav-btn
@@ -112,31 +125,31 @@ img:hover
     background-color: #967259;
     height: 2.5rem;
     width: 9rem;
-    border-radius: 10px;
+    border-radius: 15px;
     align-content: center;
     font-size: 20px;
     text-align: center;
     color: #ece0d1;
     text-decoration: none;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
 }
+.nav-btn:hover 
+{
+    background-color: rgba(83, 55, 31, 0.8);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 .active 
 {
     background-color: #38220f;
     box-shadow: 0 5px 12px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease;
 }
-
-.nav-btn:hover 
-{
-    background-color: #53371f;
-    transform: scale(1.05);
-    opacity: 0.8;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-}
-
 .nav-btn.active:hover 
 {
-    opacity: 1;
+    background-color: rgba(56, 34, 15, 1);
     transform: scale(1.05);
     box-shadow: 0 5px 12px rgba(0, 0, 0, 1);
 }

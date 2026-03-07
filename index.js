@@ -11,17 +11,17 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) =>
 {
-    res.render(__dirname + '/views/index.ejs');
+    res.render(__dirname + '/views/index.ejs', { page: 'home' });
 });
 
 app.get('/about', (req, res) =>
 {
-    res.render(__dirname + '/views/about.ejs');
+    res.render(__dirname + '/views/about.ejs', { page: 'about' });
 });
 
 app.get('/links', (req, res) =>
 {
-    res.render(__dirname + '/views/links.ejs');
+    res.render(__dirname + '/views/links.ejs', { page: 'links' });
 });
 
 
