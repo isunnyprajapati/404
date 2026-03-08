@@ -32,12 +32,22 @@
 
 .title
 {
-    color: #38220f;
     display: flex;
     justify-content: start;
     align-items: center;
+}
+.title a
+{
+    text-decoration: none;
+    color: #38220f;
     font-size: 1.8rem;
     text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.title a:hover
+{
+    cursor: pointer;
+    transform: scale(1.05);
 }
 
 .nav-btns 
@@ -47,6 +57,38 @@
     align-items: center;
     gap: 20px;
 }
+.nav-btn
+{
+    background-color: #967259;
+    height: 2.5rem;
+    width: 9rem;
+    border-radius: 15px;
+    align-content: center;
+    font-size: 20px;
+    text-align: center;
+    color: #ece0d1;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+.nav-btn:hover 
+{
+    background-color: rgba(83, 55, 31, 0.8);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.active 
+{
+    background-color: #38220f;
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 1);
+    transition: transform 0.3s ease;
+}
+.nav-btn.active:hover 
+{
+    background-color: rgba(56, 34, 15, 1);
+    transform: scale(1.05);
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 1);
+}
 
 .search-bar 
 {
@@ -55,7 +97,6 @@
     align-items: center;
     gap: 15px;
 }
-
 .search-bar form
 {
     display: flex;
@@ -89,7 +130,6 @@
     outline: none;
     background: none;
     color: #38220f;
-
     opacity: 0;
     transition: width 1s linear, opacity 1s linear;
 }
@@ -111,45 +151,8 @@
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
     transition: transform 0.3s ease;
 }
-
-
 #login:hover 
 {
     cursor: pointer;
     transform: scale(1.05);
-    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
-}
-
-.nav-btn
-{
-    background-color: #967259;
-    height: 2.5rem;
-    width: 9rem;
-    border-radius: 15px;
-    align-content: center;
-    font-size: 20px;
-    text-align: center;
-    color: #ece0d1;
-    text-decoration: none;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease;
-}
-.nav-btn:hover 
-{
-    background-color: rgba(83, 55, 31, 0.8);
-    transform: scale(1.05);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
-}
-
-.active 
-{
-    background-color: #38220f;
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 1);
-    transition: transform 0.3s ease;
-}
-.nav-btn.active:hover 
-{
-    background-color: rgba(56, 34, 15, 1);
-    transform: scale(1.05);
-    box-shadow: 0 5px 12px rgba(0, 0, 0, 1);
 }

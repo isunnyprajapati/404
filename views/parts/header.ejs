@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/home.css">
-
-
+    <link rel="stylesheet" href="styles/journal.css">
+    <link rel="stylesheet" href="styles/blog.css">
 </head>
 
 <body>
@@ -17,12 +17,12 @@
     <section class="main-head">
         <div class="header">
             <div class="title">
-                <span>404</span>
+                <a href="/"><span>404</span></a>
             </div>
             <div class="nav-btns">
                 <a class="nav-btn <%= page === 'home'? 'active' : '' %>" id="home" href="/">Home</a>
-                <a class="nav-btn <%= page === 'about'? 'active' : '' %>" id="about" href="/about">Journal</a>
-                <a class="nav-btn <%= page === 'links'? 'active' : '' %>" id="links" href="/links">Blog</a>
+                <a class="nav-btn <%= page === 'about'? 'active' : '' %>" id="about" href="/journal">Journal</a>
+                <a class="nav-btn <%= page === 'links'? 'active' : '' %>" id="links" href="/blog">Blog</a>
             </div>
             <div class="search-bar">
                 <form action="/search">

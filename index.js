@@ -14,14 +14,14 @@ app.get('/', (req, res) =>
     res.render(__dirname + '/views/index.ejs', { page: 'home' });
 });
 
-app.get('/about', (req, res) =>
+app.get('/journal', (req, res) =>
 {
-    res.render(__dirname + '/views/about.ejs', { page: 'about' });
+    res.render(__dirname + '/views/journal.ejs', { page: 'about' });
 });
 
-app.get('/links', (req, res) =>
+app.get('/blog', (req, res) =>
 {
-    res.render(__dirname + '/views/links.ejs', { page: 'links' });
+    res.render(__dirname + '/views/blog.ejs', { page: 'links' });
 });
 
 
