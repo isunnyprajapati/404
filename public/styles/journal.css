@@ -1,0 +1,42 @@
+
+.main-body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 1000px;
+    border-radius: 15px;
+}
+
+.journal-body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    color: rgba(56, 34, 15, 1);
+}
+
+.jurnal h3
+{
+    font-size: 2.5rem;
+    color: rgba(46, 24, 5, 1);
+}
+.jurnal span
+{
+    font-size: 1.5rem;
+}
+
+.jurnal a
+{
+    text-decoration: underline;
+    color: #551A8B;
+    color: rgba(46, 24, 5, 1);
+}
+.jurnal a:hover
+{
+    cursor: pointer;
+}

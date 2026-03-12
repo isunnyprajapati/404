@@ -26,7 +26,7 @@
     padding-left: 20px;
     padding-right: 20px;
     border-radius: 15px;
-    background-color: #dbc1ac;
+    background-color: rgba(219, 193, 172, 0.9);
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
@@ -73,7 +73,7 @@
 }
 .nav-btn:hover 
 {
-    background-color: rgba(83, 55, 31, 0.8);
+    /* background-color: rgba(83, 55, 31, 0.8); */
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
@@ -116,6 +116,7 @@
 {
     cursor: pointer;
     transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
 }
 
 .search-box
@@ -155,4 +156,5 @@
 {
     cursor: pointer;
     transform: scale(1.05);
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.6));
 }

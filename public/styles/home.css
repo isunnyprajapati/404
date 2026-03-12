@@ -13,6 +13,16 @@ p
     font-family: 'Courier New', Courier, monospace;
 }
 
+.sign a
+{
+    text-decoration: underline;
+    color: #551A8B;
+}
+.sign a:hover
+{
+    cursor: pointer;
+}
+
 .main-body 
 {
     display: flex;
@@ -23,7 +33,7 @@ p
     border-radius: 15px;
 }
 
-.body
+.home-body
 {
     display: flex;
     flex-direction: column;

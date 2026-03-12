@@ -1,0 +1,91 @@
+/* ---  login  --- */
+
+.login-container
+{
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    inset: 0;
+    z-index: 200;
+    
+    height: 100vh;
+    width: 100vw;
+
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.5);
+}
+.login-box
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+    z-index: 300;
+
+    height: 40vh;
+    width: 20vw;
+    padding: 40px;
+    border-radius: 15px;
+
+    background-color: rgba(219, 193, 172, 0.8);
+    backdrop-filter: blur(10px);
+    filter: drop-shadow(0 40px 80px rgba(0, 0, 0, 0.3));
+    border: 1px solid rgba(56, 34, 15, 0.7);
+}
+.login-box svg 
+{
+    height: 18%;
+    width: 18%;
+    color: #38220f;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+.login-box form 
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+
+    width: 100%;
+}
+
+#username, #password
+{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #38220f;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+    outline: none;
+    background: none;
+    color: #38220f;
+    font-size: 1.3rem;
+}
+#username::placeholder, #password::placeholder
+{
+    color: #38220f;
+    font-size: 1.3rem;
+    opacity: 0.8;
+}
+
+.login-box button
+{
+    height: 45px;
+    width: 45%;
+    border-radius: 15px;
+    background-color: #38220f;
+    color: #dbc1ac;
+    font-size: 1.2rem;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.4));
+}
+.login-box button:hover
+{
+    cursor: pointer;
+}

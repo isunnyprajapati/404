@@ -4,3 +4,12 @@ body
     background-color: #967259;
 }
 
+.main-body 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 1000px;
+    border-radius: 15px;
+}

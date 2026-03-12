@@ -11,7 +11,7 @@ app.use(express.static('public'));
 
 app.get('/', (req, res) =>
 {
-    res.render(__dirname + '/views/index.ejs', { page: 'home' });
+    res.render(__dirname + '/views/home.ejs', { page: 'home' });
 });
 
 app.get('/journal', (req, res) =>
@@ -24,6 +24,15 @@ app.get('/blog', (req, res) =>
     res.render(__dirname + '/views/blog.ejs', { page: 'links' });
 });
 
+app.post('/login', (req, res) =>
+{
+    console.log(req.body);
+});
+
+app.post('/signup', (req, res) =>
+{
+    console.log(req.body);
+});
 
 app.listen(port, () => 
 {
