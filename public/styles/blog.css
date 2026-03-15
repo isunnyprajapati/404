@@ -35,7 +35,7 @@
 {
     text-decoration: underline;
     color: #551A8B;
-    color: rgba(46, 24, 5, 1);
+    /* color: rgba(46, 24, 5, 1); */
 }
 .blogging a:hover
 {
